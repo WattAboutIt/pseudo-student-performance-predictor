@@ -6,6 +6,7 @@ Provides API endpoints for model predictions with an interactive UI.
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import os
 from pathlib import Path
@@ -16,6 +17,9 @@ app = FastAPI(
     description="Predict student performance based on study habits and other factors",
     version="1.0.0"
 )
+
+# Mount static files (CSS, JS, etc.)
+app.mount("/static", StaticFiles(directory="."), name="static")
 
 # Add CORS middleware to allow cross-origin requests
 app.add_middleware(
