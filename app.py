@@ -116,6 +116,9 @@ async def make_prediction(input_data: PredictionInput):
         # Make prediction
         prediction = predict(model_data, features)
         
+        # Cap prediction at 100
+        prediction = min(prediction, 100)
+        
         return {
             "predicted_performance_index": round(prediction, 2),
             "message": f"Predicted performance index: {prediction:.2f}"
