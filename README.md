@@ -8,8 +8,7 @@ A machine learning application that predicts student performance based on study 
 ✅ **Model Persistence** - Saved with joblib for easy loading and deployment  
 ✅ **Organized Functions** - Modular training code in `train_model.py`  
 ✅ **FastAPI Web Service** - REST API with automatic documentation  
-✅ **Interactive UI** - Modern, responsive web interface  
-✅ **Model Evaluation** - MSE and R² score tracking
+✅ **Interactive UI** - Modern, responsive web interface
 
 ## Project Structure
 
