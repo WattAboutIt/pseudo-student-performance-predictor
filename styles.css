@@ -15,7 +15,8 @@ body {
     align-items: center;
     padding: 20px;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* Night sky background layers */
