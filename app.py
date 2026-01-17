@@ -121,7 +121,7 @@ async def make_prediction(input_data: PredictionInput):
         
         return {
             "predicted_performance_index": round(prediction, 2),
-            "message": f"Predicted performance index: {prediction:.2f}"
+            "message": f"Predicted marks: {prediction:.2f}"
         }
     except Exception as e:
         return {"predicted_performance_index": 0, "message": f"Error: {str(e)}"}
